@@ -1,0 +1,25 @@
+🔹 Lead Ads Retrieval
+
+https://developers.facebook.com/docs/marketing-api/guides/lead-ads/retrieving/
+
+⸻
+
+🔹 Webhooks (Page)
+
+https://developers.facebook.com/docs/graph-api/webhooks/getting-started
+
+⸻
+
+ Don’t read everything — just these
+
+⸻
+
+🥈 2. Graph API Explorer (VERY IMPORTANT TOOL)
+
+ https://developers.facebook.com/tools/explorer/
+
+Use this to:
+
+* Test API calls
+* Fetch sample lead
+* Understand response

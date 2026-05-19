@@ -1,0 +1,5 @@
+phonenumbers
+uvicorn
+fastapi
+requests
+httpx
