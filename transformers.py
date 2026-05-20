@@ -20,10 +20,10 @@ def transform_sm_general_bot(data):
         "name": clean(data.get("name")),
         "Email": clean(data.get("email")).lower(),
         "Phone": phone_data["Phone"],
-        "DesiredCourse": "",
-        "NearestBranch": clean(data.get("branch")),
+        "DesiredCourse": "",        
         "Remarks": remarks,
-        "label": "14920"
+        "label": "15132",
+        "NearestBranch": clean(data.get("branch"))
     }
 
 def transform_sm_filter_bot(data):
@@ -40,10 +40,10 @@ def transform_sm_filter_bot(data):
         "name": clean(data.get("name")),
         "Email": "",  # not provided
         "Phone": phone_data["Phone"],
-        "DesiredCourse": "",  # keep empty as decided
-        "NearestBranch": "",  # not available
+        "DesiredCourse": "",  # keep empty as decided        
         "Remarks": remarks,
-        "label": "14920"  # confirm if same label
+        "label": "14920",  # confirm if same label
+        "NearestBranch":  clean(data.get("branch"))  # not available
     }
 
 def transform_sm_general_insta_bot(data):
@@ -66,10 +66,10 @@ def transform_sm_general_insta_bot(data):
         "name": clean(data.get("name")),
         "Email": clean(data.get("email")).lower(),
         "Phone": phone_data["Phone"],
-        "DesiredCourse": "",
-        "NearestBranch": branch,
+        "DesiredCourse": "",        
         "Remarks": remarks,
-        "label": "14920"
+        "label": "15133",
+        "NearestBranch": branch
     }
 
 def get_transformer(source):

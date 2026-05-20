@@ -23,7 +23,10 @@ logging.basicConfig(
 )
 
 
-app = FastAPI()
+app = FastAPI(
+    title="SM Filter Bot API",
+    root_path="/sm_filter_bot"
+)
 
 
 @app.post("/api/leads")
