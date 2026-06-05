@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 from transformers import get_transformer
 
 from mis_service import send_to_mis
-
+from fastapi.middleware.cors import CORSMiddleware
 
 # 🔹 Logging setup
 handler = RotatingFileHandler(
@@ -28,7 +28,13 @@ app = FastAPI(
     root_path="/sm_filter_bot"
 )
 
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins= ["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.post("/api/leads")
 async def receive_lead(request: Request):
 
